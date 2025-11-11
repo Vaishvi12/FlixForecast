@@ -27,42 +27,47 @@ The film industry often struggles with predicting which movies will succeed or f
 **Objective:** Gather a comprehensive dataset of movie information from IMDb.
 
 - **Tools Used:** Python, Octoparse
-- **Dataset:** 5 years of movie data with approximately **10,000 entries** per year.
+- **Dataset:** 5 years of movie data with approximately 10,000 entries per year.
 - **Data Columns:** Year, Certificate, Runtime, Score, Director, Cast, Number of Votes, Gross Revenue, Genre, IMDb Rating, Movie Title, etc.
 
 ### 2. Data Cleaning & Model Development
 
 **Objective:** Clean and preprocess the collected data, then develop a machine learning model for prediction.
 
-- **Data Preprocessing:**
-  - Remove irrelevant or redundant columns.
-  - Handle missing values (using mean imputation for rating columns).
-  - Focus on key features like 'genre,' 'rating,' and 'gross revenue' for model training.
+#### Data Preprocessing:
 
-- **Predictive Model:**
-  - A **RandomForest Regressor** model is trained to predict IMDb ratings based on historical movie data.
+- Remove irrelevant or redundant columns.
+- Handle missing values (using mean imputation for rating columns).
+- Focus on key features like 'genre,' 'rating,' and 'gross revenue' for model training.
+
+#### Predictive Model:
+
+- A **RandomForest Regressor** model is trained to predict IMDb ratings based on historical movie data.
 
 ### 3. Frontend Development
 
 **Objective:** Create an interactive and visually appealing web interface.
 
-- **Technologies:**
-  - **HTML** for structuring the webpage.
-  - **CSS** for styling the web page and ensuring a clean, modern design.
-  - **JavaScript** for dynamic functionality, such as dropdowns for genre selection.
-  - **DOM Manipulation** for updating content based on user input.
-  - **<marquee> tag** for creating a smooth scrolling effect.
+#### Technologies:
+
+- **HTML** for structuring the webpage.
+- **CSS** for styling the web page and ensuring a clean, modern design.
+- **JavaScript** for dynamic functionality, such as dropdowns for genre selection.
+- **DOM Manipulation** for updating content based on user input.
+- `<marquee>` tag for creating a smooth scrolling effect.
 
 ### 4. Data Visualizations
 
 **Objective:** Generate insightful visualizations to explore genre trends, audience preferences, and movie performance.
 
-- **Visualization Tools:**
-  - **Jupyter Notebook** is used for generating bar charts, pie charts, and other visual representations.
-  - Insights into genre popularity, rating distribution, and historical box office performance are visualized.
+#### Visualization Tools:
 
-- **Flask Backend:**
-  - The Flask server provides a backend to interact with the machine learning model and serve predictions and visualizations dynamically.
+- **Jupyter Notebook** is used for generating bar charts, pie charts, and other visual representations.
+- Insights into genre popularity, rating distribution, and historical box office performance are visualized.
+
+#### Flask Backend:
+
+- The Flask server provides a backend to interact with the machine learning model and serve predictions and visualizations dynamically.
 
 ### 5. Backend Integration
 
@@ -72,9 +77,10 @@ The film industry often struggles with predicting which movies will succeed or f
   - The data is stored in **JSON** and **Excel** formats for flexibility.
   - MongoDB enables fast data retrieval and ensures scalability as the project grows.
 
-- **Flask Framework:** 
-  - The backend logic is implemented using Flask, which serves the model predictions and visualizations to the user interface.
-  - AJAX requests from the frontend dynamically fetch the predictions and visualizations.
+#### Flask Framework:
+
+- The backend logic is implemented using Flask, which serves the model predictions and visualizations to the user interface.
+- AJAX requests from the frontend dynamically fetch the predictions and visualizations.
 
 ## Technologies Used
 
