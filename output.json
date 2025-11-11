@@ -1,0 +1,23 @@
+{
+    "Action": 5.5,
+    "Animation": 6.1,
+    "Comedy": 5.7,
+    "Crime": 5.9,
+    "Drama": 6.1,
+    "Biography": 6.5,
+    "Family": 6.0,
+    "Fantasy": 5.5,
+    "History": 6.4,
+    "Horror": 4.7,
+    "Music": 7.0,
+    "Musical": 6.5,
+    "Mystery": 5.4,
+    "Reality-TV": 5.2,
+    "Romance": 5.9,
+    "Sci-fi": 6.4,
+    "Sport": 6.5,
+    "Talk-Show": 5.8,
+    "Thriller": 5.6,
+    "War": 5.8,
+    "Western": 5.1
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/globals.css" />
+    <link rel="stylesheet" href="/static/styleguide.css" />
+    <link rel="stylesheet" href="/static/prediction.css" />
+    <title>FSD MINI</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="frame-wrapper">
+        <div class="div">
+          <div class="sub-container">
+            <div class="text-container">
+              <div class="heading">Here's Your Score!</div>
+              
+            </div>
+            <div class="rectangle">
+                <marquee behavior="alternate" direction="left" scrollamount="8.4">
+       
+                    <div class="group1">
+                      <div class="image">
+                        <img src="./static/Images/super-girl.jpg" alt="super girl" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/tenet.jpg" alt="" /> 
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/dangal.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/without-remores.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/along-with-the-gods.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/static/Images/asoka.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img
+                          src="./static/Images/animal-world.ZW1zLXByZC1hc3NldHMvbW92aWVzL2JjNTBhMTY4LTczZTItNGQxZi05ZmUxLWQwN2ZlNThiZGVkYi53ZWJw"
+                          alt=""
+                        />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/bao.jpg.crdownload" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/the-mermaid.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/boss-baby.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/the-eight-hundred.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/Over_the_Moon2020.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/baagi.jpg.crdownload" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/outside-the-wire.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/killerman-french-dvd-movie-cover.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/shadow.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/grown-ups.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/train-to-busan.jpg" alt="" />
+                      </div>
+                      <div class="image">
+                        <img src="./static/Images/Mulan_(2020_film)_poster.jpg" alt="" />
+                      </div>
+                    </div>
+                  </marquee>
+               
+                 
+            
+            </div>
+          </div>
+          <div class="form">
+            <div class="items-container">
+                <h1 style="color:rgb(255, 255, 255);">your approximate IMDB rating would be : {{ option }}</h1>
+
+              <!-- <div class="container">
+                <label class="text-wrapper" for="input-1">Name of the movie</label>
+                <input class="input-field" placeholder="Enter Name" type="text" id="input-1" />
+              </div> -->
+              <!-- <div class="container">
+                <label class="text-wrapper" for="input-2">Name of the Director</label>
+                <input class="input-field" placeholder="Enter Name" type="text" id="input-2" />
+              </div> -->
+            </div>
+            <!-- <div class="items-container">
+              <div class="container">
+                <label class="text-wrapper" for="input-3">Name of Actor</label>
+                <input class="input-field" placeholder="Actor name" type="text" id="input-3" />
+              </div> -->
+            </div>
+           
+
+            <!-- <div class="box">
+              <label id="genre"> Genre </label>
+              <select> -->
+                
+                <!-- <option>Action</option>
+                <option>Animation</option>
+                <option>Comedy</option>
+                <option>Crime</option>
+                <option>Drama</option>
+                <option>Biography</option>
+                <option>Family</option>
+                <option>Fantasy</option>
+                <option>History</option>
+                <option>Horror</option>
+                <option>Music</option>
+                <option>Musical</option>
+                <option>Mystery</option>
+                <option>Reality-TV</option>
+                <option>Romance</option>
+                <option>Sci-fi</option>
+                <option>Sport</option>
+                <option>Talk-Show</option>
+                <option>Thriller</option>
+                <option>War</option>
+                <option>Western</option>
+              </select>
+            </div>
+            <button class="button" onclick="submitForm()">
+              <div class="text-2">Submit</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <script>
+      function submitForm() {
+        // Get input values
+        var movieName = document.getElementById('input-1').value;
+        var directorName = document.getElementById('input-2').value;
+        var actorName = document.getElementById('input-3').value;
+
+        // Validation regex (allowing letters, spaces, and hyphens)
+        var nameRegex = /^[A-Za-z\s-]+$/;
+
+        // Perform validation
+        if (!nameRegex.test(movieName.trim())) {
+          alert('Please enter a valid name for the movie (only letters, spaces, and hyphens).');
+          return;
+        }
+
+        if (!nameRegex.test(directorName.trim())) {
+          alert('Please enter a valid name for the director (only letters, spaces, and hyphens).');
+          return;
+        }
+
+        if (!nameRegex.test(actorName.trim())) {
+          alert('Please enter a valid name for the actor (only letters, spaces, and hyphens).');
+          return;
+        }
+
+        // If all validations pass, you can proceed with form submission
+        alert('Form submitted successfully!');
+        // Uncomment the following line to submit the form
+        document.getElementById('yourFormId').submit();
+        
+      }
+    </script>
+  </body>
+</html>

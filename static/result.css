@@ -1,0 +1,253 @@
+.frame {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .frame .frame-wrapper {
+    background: rgb(205, 32, 32);
+    background: linear-gradient(90deg, rgba(205, 32, 32, 1) 0%, rgba(0, 0, 0, 1) 52%);
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .frame .div {
+    display: flex;
+    max-width: 100%;
+    align-items: flex-start;
+    gap: 2%;
+    position: relative;
+    top: 5vh;
+    left: 2%;
+  }
+  
+  .frame .sub-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 100%;
+    align-items: flex-start;
+    gap: 4%;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .frame .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2%;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frame .heading {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1vh;
+    font-family: "Manrope", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 3vh;
+    letter-spacing: 0;
+    line-height: 4.5vh;
+  }
+  
+  .frame .paragraph {
+    position: relative;
+    align-self: stretch;
+    font-family: "Manrope", Helvetica;
+    font-weight: 400;
+    color: var(--grey-60);
+    font-size: 1.5vh;
+    letter-spacing: 0;
+    line-height: 2.5vh;
+  }
+  
+  .frame .rectangle {
+    position: relative;
+    width: 25%;
+    max-width: 100%;
+    height: 40vh;
+    background: linear-gradient(180deg, rgb(1, 1, 1) 0%, rgb(51, 51, 51) 40.62%, rgb(0, 0, 0) 100%);
+  }
+  
+  .frame .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4%;
+    padding: 4%;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    background-color: var(--black-06);
+    border-radius: 2vh;
+    border: 1px solid;
+    border-color: var(--black-15);
+  }
+  
+  .frame .items-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1%;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frame .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1%;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .frame .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1vh;
+    font-family: "Manrope", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.5vh;
+    letter-spacing: 0;
+    line-height: 2.5vh;
+  }
+  
+  .frame .input-field {
+    overflow: hidden;
+    padding: 2vh;
+    position: relative;
+    align-self: stretch;
+    width: 80%;
+    max-width: 100%;
+    background-color: var(--black-08);
+    border-radius: 1vh;
+    border: 1px solid;
+    border-color: var(--black-15);
+    flex: 1;
+    margin-top: -1vh;
+    font-family: "Manrope", Helvetica;
+    font-weight: 400;
+    color: var(--grey-60);
+    font-size: 1.3vh;
+    letter-spacing: 0;
+    line-height: 2vh;
+  }
+  
+  .frame .input-field input {
+    width: 100%;
+    border: none;
+    background: none;
+  }
+  
+  .frame .input {
+    padding: 2vh;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--black-08);
+    border-radius: 1vh;
+    border: 1px solid;
+    border-color: var(--black-15);
+    flex: 1;
+    margin-top: -1vh;
+    font-family: "Manrope", Helvetica;
+    font-weight: 400;
+    color: var(--grey-60);
+    font-size: 1.3vh;
+    letter-spacing: 0;
+    line-height: 2vh;
+  }
+  
+  .frame .container-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1%;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0;
+  }
+  
+  .frame .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8vh 2.5vh;
+    background-color: #c41212;
+    border: none;
+    border-radius: 1vh;
+    color: #fff;
+    font-family: "Manrope", Helvetica;
+    font-weight: 600;
+    font-size: 1.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .frame .rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    max-width: 100%;
+  }
+  
+  .frame .rectangle .group1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .frame .rectangle .image {
+    margin: 0 1vh;
+  }
+  
+  .frame .text-2 {
+    white-space: nowrap;
+  }
+  
+  .group1 {
+    max-width: 250vw;
+    height: 32.9vh;
+    display: flex;
+  }
+  
+  .group1 .image {
+    width: 25vh;
+    height: 100%;
+  }
+  
+  img {
+    height: 100%;
+  }
+  
+  .box select {
+    background-color: #af0505;
+    color: white;
+    padding: 1.2vh;
+    height: 4vh;
+    width: 15vh;
+    border: none;
+    font-size: 1.5vh;
+    box-shadow: 0 0.5vh 2.5vh rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 1vh;
+    margin-left: 1vh;
+  }
+  
+  

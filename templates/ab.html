@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/globals.css" />
+    <link rel="stylesheet" href="/static/styleguide.css" />
+    <link rel="stylesheet" href="/static/analysis.css" />
+    <title>FSD MINI</title>
+
+    <style>
+      /* Add styles for the graph container */
+      #graphContainer {
+        float: right;
+        width: 70%; /* Adjust the initial width as needed */
+        height: 80vh; /* Adjust the initial height as needed */
+        overflow: hidden;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+      }
+
+      /* Style for the image element within the graph container */
+      #graphImage {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="frame-wrapper">
+        <div class="div">
+          <div class="sub-container">
+            <div class="text-container">
+              <div class="heading">ANALYSIS</div>
+            </div>
+            <div class="rectangle">
+              <marquee behavior="alternate" direction="left" scrollamount="8.4">
+                <!-- Your existing image marquee code here -->
+              </marquee>
+            </div>
+          </div>
+          <div class="form">
+            <div class="box">
+              <label id="yearLabel">SELECT YEAR</label>
+              <select id="yearDropdown">
+                <option value="" disabled selected> YEAR</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+              </select>
+            </div>
+            <button class="button" onclick="submitForm()">
+              <div class="text-2" style="background-color: black;">Submit</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graph Section -->
+    <div id="graphContainer">
+      <!-- The graph will be displayed here -->
+      <img id="graphImage" src="" alt="Genre Pie Chart" />
+    </div>
+
+    <!-- Add your JavaScript code to handle the graph updates -->
+    <script>
+      // Function to update the graph based on the selected year
+      function updateGraph() {
+        const selectedYear = document.getElementById("yearDropdown").value;
+        document.getElementById("graphImage").src = `/${selectedYear}`;
+        document.getElementById("yearLabel").innerText = `SELECT YEAR - ${selectedYear}`;
+      }
+
+      // Add event listener to the dropdown
+      document.getElementById("yearDropdown").addEventListener("change", updateGraph);
+
+      // Initial graph load
+      updateGraph();
+    </script>
+  </body>
+</html>

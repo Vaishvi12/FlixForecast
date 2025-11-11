@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/globals.css" />
+    <link rel="stylesheet" href="/static/styleguide.css" />
+    <link rel="stylesheet" href="/static/analysis.css" />
+    <title>FSD MINI</title>
+
+    <style>
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+          }
+    
+          /* Add styles for the form container */
+          #formContainer {
+            width: 50%;
+          }
+      /* Add styles for the graph container */
+      #graphContainer {
+        float: right;
+        width: 100%; /* Adjust the initial width as needed */
+        height: 60vh; /* Adjust the initial height as needed */
+        overflow: hidden;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+      }
+
+      /* Style for the image element within the graph container */
+      #graphImage {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="frame-wrapper">
+        <div class="div">
+          <div class="sub-container">
+            <div class="text-container">
+              <div class="heading">ANALYSIS</div>
+            </div>
+            <div class="rectangle">
+              <marquee behavior="alternate" direction="left" scrollamount="8.4">
+                <!-- Your existing image marquee code here -->
+                <div class="group1">
+                    <div class="image">
+                      <img src="./static/Images/super-girl.jpg" alt="super girl" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/tenet.jpg" alt="" /> 
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/dangal.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/without-remores.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/along-with-the-gods.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/static/Images/asoka.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img
+                        src="./static/Images/animal-world.ZW1zLXByZC1hc3NldHMvbW92aWVzL2JjNTBhMTY4LTczZTItNGQxZi05ZmUxLWQwN2ZlNThiZGVkYi53ZWJw"
+                        alt=""
+                      />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/bao.jpg.crdownload" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/the-mermaid.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/boss-baby.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/the-eight-hundred.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/Over_the_Moon2020.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/baagi.jpg.crdownload" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/outside-the-wire.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/killerman-french-dvd-movie-cover.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/shadow.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/grown-ups.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/train-to-busan.jpg" alt="" />
+                    </div>
+                    <div class="image">
+                      <img src="./static/Images/Mulan_(2020_film)_poster.jpg" alt="" />
+                    </div>
+                  </div>
+
+              </marquee>
+            </div>
+          </div>
+         <!-- Form Container -->
+<div id="formContainer" class="form">
+    <div class="box">
+      <label id="genre" style="color:white">SELECT YEAR</label>
+      <select id="yearDropdown" style="color:aliceblue">
+        <option value="" disabled selected> YEAR</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+      </select>
+      <p></p>
+      <!-- Horizontal line -->
+      <hr style="width: 100%; margin: 20px 0; border: 1px solid #ccc;">
+  
+      <!-- Graph Container -->
+      <div id="graphContainer">
+        <!-- The graph will be displayed here -->
+        <img style="margin-bottom: 50px;" id="graphImage" src="" alt="Genre Pie Chart" />
+      </div>
+    </div>
+  </div>
+  
+    <!-- Add your JavaScript code to handle the graph updates -->
+    <script>
+      // Function to update the graph based on the selected year
+      function updateGraph() {
+        const selectedYear = document.getElementById("yearDropdown").value;
+        document.getElementById("graphImage").src = `/${selectedYear}`;
+        document.getElementById("yearLabel").innerText = `SELECT YEAR - ${selectedYear}`;
+        // Prevent the form from submitting
+        return false;
+      }
+
+      // Add event listener to the dropdown
+      document.getElementById("yearDropdown").addEventListener("change", updateGraph);
+
+      // Function to handle form submission
+      function submitForm() {
+        // Call the updateGraph function
+        updateGraph();
+        // Prevent the form from submitting
+        return false;
+      }
+    </script>
+
+  </body>
+</html>

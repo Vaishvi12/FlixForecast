@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genre Pie Chart</title>
+</head>
+<body>
+    <h1>Genre Distribution - Top 10</h1>
+    <img id="genrePieChart" src="" alt="Genre Pie Chart">
+    <script>
+        fetch('/genre-pie-chart')
+            .then(response => response.blob())
+            .then(images => {
+                // Outside the scope of this function here, `images` is a `Blob`
+                var outside = URL.createObjectURL(images);
+                document.getElementById('genrePieChart').src = outside;
+            })
+            .catch(e => console.error(e));
+    </script>
+</body>
+</html>
